@@ -38,12 +38,13 @@ export default function Reflexie() {
               <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {articles.map(article => (
                   <Card
-                    key={article.code}
+                    key={article.slug}
                     title={article.title}
                     code={article.code}
                     semester={article.semester}
                     perex={article.perex}
                     credits={article.credits}
+                    slug={article.slug}
                   />
                 ))}
               </div>

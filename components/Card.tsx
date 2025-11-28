@@ -3,15 +3,19 @@ export default function Card({
   code,
   semester,
   perex,
+  credits,
+  slug,
 }: {
   title: string;
   code: string;
   semester: string;
   perex: string;
+  credits: number;
+  slug: string;
 }) {
   return (
     <a 
-      href={`/reflexie/${title}`}
+      href={`/reflexie/${slug}`}
       className="block cursor-pointer rounded-3xl bg-primary text-background p-6 transition-all hover:bg-background hover:text-primary"
     >
       <div className="flex flex-col gap-4">
@@ -22,9 +26,12 @@ export default function Card({
         </div>
         
         <div className="pt-2">
-          <div className="flex flex-row justify-between">
-            <p className="body-small-light">{code}</p>
-            <p className="body-small-light">{semester}</p>
+          <div className="flex flex-row items-center justify-between">
+            <div className="flex gap-4">
+              <p className="body-small-light">{code}</p>
+              <p className="body-small-light">{semester}</p>
+            </div>
+            <p className="body-small-light">{credits}</p>
           </div>
 
           <p className="body-small-light">{perex}</p>
