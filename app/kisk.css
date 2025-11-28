@@ -1,0 +1,30 @@
+.styles {
+  --primary-v1: #051DB5;
+  --primary-v2: #D44B1E;
+  --highlight-v1: #F6E8C1;
+  --highlight-v2: #FFEE00;
+  --light: #FFFDF4;
+  --header-1-medium: 48px;
+  --header-2-medium: 32px;
+  --header-3-medium: 25px;
+  --header-3-light: 25px;
+  --body-regular: 16px;
+  --body-bold: 16px;
+  --body-small-light: 14px;
+  --menu-strikethrough: 18px;
+  --menu-medium: 18px;
+}
+.primary-v1 { color: var(--primary-v1); }
+.primary-v2 { color: var(--primary-v2); }
+.highlight-v1 { color: var(--highlight-v1); }
+.highlight-v2 { color: var(--highlight-v2); }
+.light { color: var(--light); }
+.header-1-medium { font-size: var(--header-1-medium); line-height: 0.022917; font-weight: 500; }
+.header-2-medium { font-size: var(--header-2-medium); line-height: 0.034375; font-weight: 500; }
+.header-3-medium { font-size: var(--header-3-medium); line-height: 0.05; font-weight: 500; }
+.header-3-light { font-size: var(--header-3-light); line-height: 0.05; font-weight: 300; }
+.body-regular { font-size: var(--body-regular); line-height: 0.09375; font-weight: 400; }
+.body-bold { font-size: var(--body-bold); line-height: 0.09375; font-weight: 600; }
+.body-small-light { font-size: var(--body-small-light); line-height: 0.107143; font-weight: 400; }
+.menu-strikethrough { font-size: var(--menu-strikethrough); line-height: 0.061111; font-weight: 500; }
+.menu-medium { font-size: var(--menu-medium); line-height: 0.061111; font-weight: 500; }
