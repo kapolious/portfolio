@@ -11,9 +11,9 @@ export function getArticles() {
     const { data, content } = matter(file);
 
     return {
-      code: filename.replace(".md", ""),
-      ...data,
-      content
+      ...data,           
+      content,
+      slug: filename.replace(".md", "")
     };
   });
 }
