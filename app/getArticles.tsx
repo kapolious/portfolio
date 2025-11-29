@@ -2,7 +2,17 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-export function getArticles() {
+interface Article {
+  slug: string;
+  title: string;
+  code: string;
+  semester: string;
+  perex: string;
+  credits: number;
+  content: string;
+}
+
+export function getArticles(): Article[] {
   const dir = path.join(process.cwd(), "app/reflexie/content");
   const files = fs.readdirSync(dir);
 
@@ -11,9 +21,13 @@ export function getArticles() {
     const { data, content } = matter(file);
 
     return {
-      ...data,           
-      content,
-      slug: filename.replace(".md", "")
+      slug: filename.replace(".md", ""),
+      title: data.title as string,
+      code: data.code as string,
+      semester: data.semester as string,
+      perex: data.perex as string,
+      credits: data.credits as number,
+      content
     };
   });
 }
