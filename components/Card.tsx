@@ -3,14 +3,12 @@ export default function Card({
   code,
   semester,
   perex,
-  credits,
   slug,
 }: {
   title: string;
   code: string;
   semester: string;
   perex: string;
-  credits: number;
   slug: string;
 }) {
   return (
@@ -22,22 +20,18 @@ export default function Card({
         <h2 className="menu-medium h-[3rem] leading-[1.5rem] overflow-hidden">{title}</h2>
 
         <div className="h-64 border-2 border-background bg-transparent flex items-center justify-center">
-          <span className="text-background">ilustrace</span>
+          <span className="text-background">TODO ilustrácia</span>
         </div>
         
         <div className="pt-2">
           <div className="flex flex-row items-center justify-between">
-            <div className="flex gap-4">
               <p className="body-small-light">{code}</p>
               <p className="body-small-light">{semester}</p>
-            </div>
-            <p className="body-small-light">{credits}</p>
           </div>
 
           <p className="body-small-light">{perex}</p>
         </div>
         
-
       </div>
       
     </a>
