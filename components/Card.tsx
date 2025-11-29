@@ -1,14 +1,17 @@
 export default function Card({
-  title,
+   title,
   code,
   semester,
   perex,
+  credits,
   slug,
+
 }: {
   title: string;
   code: string;
   semester: string;
   perex: string;
+  credits: number;
   slug: string;
 }) {
   return (

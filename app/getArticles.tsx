@@ -8,6 +8,7 @@ interface Article {
   code: string;
   semester: string;
   perex: string;
+  credits: number;
   content: string;
 }
 
@@ -25,6 +26,7 @@ export function getArticles(): Article[] {
       code: data.code as string,
       semester: data.semester as string,
       perex: data.perex as string,
+      credits: data.credits as number,
       content
     };
   });
