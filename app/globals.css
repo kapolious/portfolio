@@ -13,29 +13,23 @@
 :root {
   --background: #FFFDF4;
   --primary: #051DB5;
-  --primary-v2: #D44B1E;
-  --highlight-v1: #F6E8C1;
-  --highlight-v2: #FFEE00;
+  --highlight: #f8d810;
   --light: #FFFDF4;
 }
 
 @theme {
   --color-background: var(--background);
   --color-primary: var(--primary);
+  --color-highlight: var(--highlight);
+  --color-light: var(--light);
 
   --font-family-switzer: 'Switzer', sans-serif;
   --font-family-outfit: 'Outfit', sans-serif;
 }
 
-body {
-  background: var(--background);
-  color: var(--primary);
-  font-family: 'Switzer', sans-serif;
-}
-
 @layer utilities {
   .primary { color: var(--primary) !important; }
-  .highlight { color: var(--highlight-v1) !important; }
+  .highlight { color: var(--highlight) !important; }
   .light { color: var(--light) !important; }
 
   /* Typography styles */

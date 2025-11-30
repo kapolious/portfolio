@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Placeholder from "@/public/icons/placeholder.svg";
+
 export default function Card({
    title,
   code,
@@ -17,13 +20,17 @@ export default function Card({
   return (
     <a 
       href={`/reflexie/${slug}`}
-      className="block cursor-pointer rounded-3xl bg-primary text-background p-6 transition-all hover:bg-background hover:text-primary"
+      className="block cursor-pointer rounded-3xl bg-primary text-background p-6 transition-all hover:bg-primary hover:text-highlight"
     >
       <div className="flex flex-col gap-4">
         <h2 className="menu-medium h-[3rem] leading-[1.5rem] overflow-hidden">{title}</h2>
 
-        <div className="h-64 border-2 border-background bg-transparent flex items-center justify-center">
-          <span className="text-background">TODO ilustrácia</span>
+        <div className="h-64 flex items-center justify-center">
+          <Image 
+            src={Placeholder} 
+            alt="Placeholder illustration"
+            className="w-full h-full object-contain"
+          />
         </div>
         
         <div className="pt-2">
