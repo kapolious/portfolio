@@ -18,7 +18,7 @@ export default function AboutMe() {
 
           <div className="flex flex-row gap-16">
 
-            <div className="w-86 flex items-start justify-center">
+            <div className="w-xs flex items-start justify-center">
               <Image 
                 src={Me} 
                 alt="Placeholder illustration"
