@@ -19,7 +19,7 @@ export default async function SubjectDetail({ params }: PageProps) {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="overflow-hidden bg-background">
       <main className="flex justify-center">
         <div className="container mx-auto flex flex-col items-start gap-16 px-16 pt-16 pb-16 max-w-4xl">
           
@@ -35,7 +35,6 @@ export default async function SubjectDetail({ params }: PageProps) {
             </span>
           </div>
 
-          {/* Title with X icon */}
           <div className="flex items-start gap-4">
             <StarIcon size={50}/>
             <h1 className="header-1-medium text-primary">
@@ -53,7 +52,6 @@ export default async function SubjectDetail({ params }: PageProps) {
   );
 }
 
-// Optional: Pre-render all subject pages at build time
 export async function generateStaticParams() {
   const articles = getArticles();
   

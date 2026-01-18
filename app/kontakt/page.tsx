@@ -16,7 +16,7 @@ export default function Contact() {
 
           <div>
             <p className="body-regular text-primary">
-              TODO
+              karolina.pirohova@gmail.com
             </p>
           </div>
 

@@ -20,7 +20,7 @@ export default function Card({
   return (
     <a 
       href={`/reflexie/${slug}`}
-      className="block cursor-pointer rounded-3xl bg-primary text-background p-6 transition-all hover:bg-primary hover:text-highlight"
+      className="block cursor-pointer rounded-3xl bg-primary text-background p-6 transition-all hover:bg-hover"
     >
       <div className="flex flex-col gap-4">
         <h2 className="menu-medium h-[3rem] leading-[1.5rem] overflow-hidden">{title}</h2>

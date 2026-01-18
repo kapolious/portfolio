@@ -26,8 +26,7 @@ export default function Home() {
 
           <div className="flex flex-col gap-6 max-w-xl pt-48">
             <p className="header-3-light text-primary">
-              Lorem ipsum dolor sit amet consectetur. Odio adipiscing non risus purus nibh 
-              egestas accumsan velit turpis. 
+              dvadsaťniečo ročná žena s&nbsp;hyperfixáciou na ryby, premyslené priestory a modrú farbu.
             </p>
 
             <a 
