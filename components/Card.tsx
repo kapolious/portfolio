@@ -38,8 +38,6 @@ export default function Card({
               <p className="body-small-light">{code}</p>
               <p className="body-small-light">{semester}</p>
           </div>
-
-          <p className="body-small-light">{perex}</p>
         </div>
         
       </div>

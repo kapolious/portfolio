@@ -27,7 +27,7 @@ export function getArticles(): Article[] {
       semester: data.semester as string,
       perex: data.perex as string,
       credits: data.credits as number,
-      content
+      content: data.content as string,
     };
   });
 }
