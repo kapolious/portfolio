@@ -22,14 +22,14 @@ export default function Reflexie() {
                 <a 
                   href="/reflexie"
                   className="body-bold text-primary border-1 border-primary px-6 py-2 rounded-3xl 
-                  hover:bg-highlight hover:text-primary transition-all"
+                  hover:bg-hover hover:text-background transition-all"
                 >
                   podľa abecedy
                 </a>
                 <a 
                   href="/reflexie"
                   className="body-bold text-primary border-1 border-primary px-6 py-2 rounded-3xl 
-                  hover:bg-highlight hover:text-primary transition-all"
+                  hover:bg-hover hover:text-background transition-all"
                 >
                   semester
                 </a>
