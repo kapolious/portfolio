@@ -1,6 +1,6 @@
 import StarIcon from "../../components/StarIcon";
 import Image from "next/image";
-import Me from "@/public/icons/ja.jpeg";
+import Me from "@/public/icons/ja_blue.png";
 
 export default function AboutMe() {
   return (
