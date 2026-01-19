@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Placeholder from "@/public/icons/placeholder.svg";
+import { useState } from "react";
 
 export default function Card({
    title,
@@ -17,6 +20,8 @@ export default function Card({
   credits: number;
   slug: string;
 }) {
+  const [imgSrc, setImgSrc] = useState(`/icons/${slug}.svg`);
+
   return (
     <a 
       href={`/reflexie/${slug}`}
@@ -27,9 +32,12 @@ export default function Card({
 
         <div className="h-64 flex items-center justify-center">
           <Image 
-            src={Placeholder} 
-            alt="Placeholder illustration"
+            src={imgSrc}
+            alt={`${title} illustration`}
             className="w-full h-full object-contain"
+            width={256}
+            height={256}
+            onError={() => setImgSrc(Placeholder)}
           />
         </div>
         
